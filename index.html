@@ -4,155 +4,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lovers and Friends</title>
+    <title>Lovers & Friends | Premium Wine Club</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Lovers and Friends wine club</h1>
-        <p><i>Your Destination for Fine Wines</i></p>
-    </header>
-    <div id="navbar">
-      <a href="#default" id="logo">Lovers & Friends</a>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <a href="#" id="logo">Lovers & Friends</a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <div id="navbar-right">
-        <a class="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#home">Home</a>
+        <a href="#house-wines">House Wines</a>
+        <a href="#packages">Packages</a>
+        <a href="#about-us">About</a>
+        <a href="#contact">Join Us</a>
       </div>
-    </div>
-    <form action="action_page.php" style="border:1px solid #ccc">
-      <div class="container">
-        <h1>Sign Up</h1>
-        <p>Please fill in this form to create an account.</p>
-        <hr>
-    
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-    
-        <label for="psw"><b>Address</b></label>
-        <input type="password" placeholder="Enter Address" name="psw" required>
-    
-        <label for="psw-repeat"><b>Contact Number</b></label>
-        <input type="password" placeholder="Enter Number" name="psw-repeat" required>
-
-        <label for="psw-repeat"><b>Full Name</b></label>
-        <input type="password" placeholder="Enter Name" name="psw-repeat" required>
-    
-        <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-        </label>
-    
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-    
-        <div class="clearfix">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Send</button>
-        </div>
-      </div>
-
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="#house-wines">HOUSE WINES</a>
-        <a href="#packages">PACKAGES</a>
-        <a href="#about-us">ABOUT US</a>
-        <a href="#terms">TERMS AND CONDITIONS</a>
     </nav>
 
-    <section id="home">
-        <h2>Welcome to Lover's and Friends</h2>
-        <p> allow members to have access to best, approachable and premium wines in the market. Unlike other wine club, our wine hand picked from trusted suppliers and wineries to ensure that our members get nothing but fine wines. We know that most of people spend much of their time in local liquor shops searching cluelessly for a nice bottles to go enjoy with friends or just for a family dinner. This you have to leave it to us pick wine based on your preference and taste buds.
- Once you prescribe you will receive four bottle of wines each month. This will allow our members to enjoy at least one bottle every week while at expand your wine knowledge by tasting different bottles.
-          </p>
-    </section>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="wine2.jpg" onclick="redirect('private testind.html')">
-          <img src="lovers1.png" alt="Cinque Terre">
-        </a>
-        <div class="desc">Private Testing</div>
-      </div>
-    </div>
-  
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="wine1.png" onclick="redirect('your_target_url2')">
-          <img src="lovers2.png" alt="Forest">
-        </a>
-        <div class="desc">Wine Testing</div>
-      </div>
-    </div>
-  
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_lights.jpg" onclick="redirect('your_target_url3')">
-          <img src="lovers3.png" alt="Northern Lights">
-        </a>
-        <div class="desc">Music</div>
-      </div>
-    </div>
-  
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_mountains.jpg" onclick="redirect('private Testing')">
-          <img src="lovers4.png" alt="Mountains">
-        </a>
-        <div class="desc">Live Music</div>
-      </div>
-    </div>
-      
-      <div class="clearfix"></div>
-
-    <section id="house-wines">
-        <h2>House Wines</h2>
-        <p>Explore our exquisite collection of house wines that are sure to delight your palate.</p>
-    </section>
-
-    <section id="packages">
-        <h2>Wine Packages</h2>
-        <div class="package">
-            <h3>Gold Package</h3>
-            <p class="amount">N$999.99/month</p>
-            <ul>
-                <li>Exclusive access to rare wines</li>
-                <li>Monthly wine tasting events</li>
-                <li>Personalized wine recommendations</li>
-            </ul>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Lovers and Friends</h1>
+            <p>Your Destination for Fine Wines</p>
+            <a href="#contact" class="btn">Join the Club</a>
         </div>
+    </header>
 
-        <div class="package">
-            <h3>Silver Package</h3>
-            <p class="amount">N$549.99/month</p>
-            <ul>
-                <li>Curated selection of premium wines</li>
-                <li>Quarterly wine pairing guide</li>
-                <li>Discounts on additional purchases</li>
-            </ul>
+    <!-- Welcome Section -->
+    <section id="home" class="reveal">
+        <h2>Welcome to Lovers and Friends</h2>
+        <p>
+            We provide our members access to the most approachable and premium wines in the market. 
+            Unlike traditional clubs, our collection is hand-picked from trusted boutique wineries 
+            to ensure that our members experience nothing but excellence. 
+            Stop wandering local liquor shops; let our experts guide your palate based on your unique preferences.
+            Join us and receive four exquisite bottles each month—one for every week of your journey through the world of fine wine.
+        </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="reveal">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="lovers1.png" alt="Private Tasting">
+                <div class="gallery-overlay">
+                    <h4>Private Tasting</h4>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="lovers2.png" alt="Wine Selection">
+                <div class="gallery-overlay">
+                    <h4>Wine Selection</h4>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="lovers3.png" alt="Music & Ambiance">
+                <div class="gallery-overlay">
+                    <h4>Music & Ambiance</h4>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="lovers4.png" alt="Live Events">
+                <div class="gallery-overlay">
+                    <h4>Live Events</h4>
+                </div>
+            </div>
         </div>
     </section>
-<section id="about-us">
-        <h2>About Us</h2>
-        <p>Our subscription is flexible by allowing subscribers to skip a month at any time or cancel. The price per box will vary as each wine cost a different.
- The benefit of becoming a member of our wine club you will have access to exclusive wine tasting events and presentation by wine experts. Members will enjoy discounts on shipment charges and purchases at tasting events.
-           We also offer guidance on how to pair you wines. If you’re having a function do not stress and look no further we can assist to stock up wine that will perfectly with your menu. The aim is to leave your guests with a good impression of your selection of wines.
-          </p>
+
+    <!-- House Wines -->
+    <section id="house-wines" class="reveal">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2>House Wines</h2>
+            <p>Explore our exquisite collection curated to delight your palate.</p>
+        </div>
+        <div class="section-grid">
+            <div class="card">
+                <h3>The Vintage Rouge</h3>
+                <p class="amount">A rich, full-bodied experience</p>
+                <ul>
+                    <li>Notes of dark cherry and oak</li>
+                    <li>Perfectly aged for 24 months</li>
+                    <li>Sourced from heritage vineyards</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Blanc de Blanc</h3>
+                <p class="amount">Crisp, elegant, and refreshing</p>
+                <ul>
+                    <li>Vibrant citrus undertones</li>
+                    <li>Chalky mineral finish</li>
+                    <li>Ideal for celebratory pairings</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="terms">
-        <h2>Terms and Conditions</h2>
-        <p>By accessing and using this website, you agree to comply with our terms and conditions. Please read them
-            carefully before using our services.</p>
+    <!-- Wine Packages -->
+    <section id="packages" class="reveal">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2>Wine Packages</h2>
+            <p>Choose the subscription that fits your lifestyle.</p>
+        </div>
+        <div class="section-grid">
+            <div class="card">
+                <h3>Gold Package</h3>
+                <p class="amount">N$ 999.99 / month</p>
+                <ul>
+                    <li>Exclusive access to rare vintages</li>
+                    <li>Monthly VIP wine tasting events</li>
+                    <li>Personalized expert recommendations</li>
+                    <li>Free shipping on all orders</li>
+                </ul>
+                <a href="#contact" class="btn" style="width: 100%; text-align: center;">Get Started</a>
+            </div>
+
+            <div class="card">
+                <h3>Silver Package</h3>
+                <p class="amount">N$ 549.99 / month</p>
+                <ul>
+                    <li>Curated selection of premium wines</li>
+                    <li>Quarterly wine pairing guides</li>
+                    <li>Exclusive member discounts</li>
+                    <li>Access to community events</li>
+                </ul>
+                <a href="#contact" class="btn" style="width: 100%; text-align: center;">Get Started</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Our Story</h2>
-        <p>At Lovers and Friends, we are passionate about delivering exceptional wines and creating memorable experiences for
-            wine enthusiasts. Our carefully curated selection showcases the best of local and international vineyards,
-            ensuring a journey of taste and refinement.</p>
+    <!-- About Us & Story -->
+    <section id="about-us" class="reveal">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); align-items: center;">
+            <div>
+                <h2>Our Story</h2>
+                <p>
+                    At Lovers and Friends, we are passionate about delivering exceptional wines and creating 
+                    memorable experiences. Our journey began with a simple goal: to make premium wine 
+                    knowledge accessible to everyone. We showcase the best of local and international 
+                    vineyards, ensuring every bottle tells a story of taste and refinement.
+                </p>
+            </div>
+            <div class="card" style="background: var(--burgundy-main);">
+                <h3>Why Join Us?</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Our subscription is flexible—skip a month or cancel anytime. As a member, 
+                    you enjoy exclusive tasting events, expert presentations, and deep discounts. 
+                    Whether you're hosting a dinner or a large function, we provide the guidance 
+                    needed to leave your guests with a lasting impression.
+                </p>
+                <a href="#terms" style="color: var(--gold-light); text-decoration: none; font-size: 0.9rem;">View Terms & Conditions →</a>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        &copy; 2024 Lovers and Friends. All rights reserved.
+    <!-- Signup Form -->
+    <section id="contact" class="signup-section reveal">
+        <div class="signup-container">
+            <h2>Join the Club</h2>
+            <p>Start your journey into the world of fine wines today.</p>
+            
+            <form action="send.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+264 ..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <input type="text" id="address" name="address" placeholder="Windhoek, Namibia" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms-check" name="terms" required>
+                    <label for="terms-check">I agree to the <a href="#terms" style="color: var(--gold-main);">Terms & Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Create Account</button>
+            </form>
+            
+            <p class="signup-footer">
+                &copy; 2024 Lovers and Friends Wine Club. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+    <footer id="terms" class="reveal">
+        <div class="footer-content">
+            <div class="footer-logo">Lovers & Friends</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p style="max-width: 600px; margin: 0 auto 2rem; opacity: 0.7; font-size: 0.9rem;">
+                By accessing and using this website, you agree to comply with our terms and conditions. 
+                We promote responsible drinking. Not for sale to persons under the age of 18.
+            </p>
+            <div class="copyright">
+                &copy; 2024 Lovers and Friends. Crafted with passion for wine enthusiasts.
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
